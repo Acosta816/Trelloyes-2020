@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TestSuite: Card Component SNAPSHOT#1: renders the UI as expected compared to the saved shot 1`] = `
+<div
+  className="Card"
+>
+  <button
+    type="button"
+  >
+    delete
+  </button>
+  <h3 />
+  <p />
+</div>
+`;
