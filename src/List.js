@@ -11,7 +11,7 @@ function List(props){
 
     const myCards = cardsArray.map(card=> {
         return(
-            <Card id={card.id} title={card.title} content={card.content} />
+            <Card id={card.id} title={card.title} content={card.content} cbDeleteCard={props.cbDeleteCard} />
         )
     })
 
@@ -22,7 +22,7 @@ function List(props){
             </header>
             <div className="List-cards">
                 {myCards}
-                <button type="button" class="List-add-button">
+                <button type="button" class="List-add-button" onClick={()=> {props.cbRando(props.id)}}>
               + Add Random Card
             </button>
             </div>
